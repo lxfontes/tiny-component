@@ -1,0 +1,8 @@
+github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 h1:El6M4kTTCOh6aBiKaUGG7oYTSPP8MxqL4YI3kZKwcP4=
+github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510/go.mod h1:pupxD2MaaD3pAXIBCelhxNneeOaAeabZDe5s4K6zSpQ=
+github.com/lxfontes/component v0.0.0-20240828212418-086462b76175 h1:VbQzMxmDML2rPwWQDoxFx4JOiD9RoshflNH0PMwvVAI=
+github.com/lxfontes/component v0.0.0-20240828212418-086462b76175/go.mod h1:Zok93S24Bm5flynjWaAU07tRNYt9gH5hcLSisFgKdAc=
+github.com/ydnar/wasm-tools-go v0.1.5 h1:ah2WT4gH0IrmN29ZSsjgNC9SPsdXZ+KN+o9uTZqNVSI=
+github.com/ydnar/wasm-tools-go v0.1.5/go.mod h1:L3sDi5rbAMJNmMO5cpDRzYYhB0r9xIU0xgpKjwU0Adg=
+tinygo.org/x/drivers v0.28.0 h1:ROVrGGXddmpn2+oV/Bu3LceYbtPCJckmgIqvPcN/L0k=
+tinygo.org/x/drivers v0.28.0/go.mod h1:T6snsUqS0RAxOANxiV81fQwLxDDNmprxTAYzmxoA7J0=

@@ -1,0 +1,5 @@
+package tinygo:test;
+
+world default {
+  include lxfontes:component/imports;
+}
