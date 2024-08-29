@@ -9,7 +9,7 @@
 package terminalstderr
 
 import (
-	terminaloutput "github.com/lxfontes/tinygo/gen/wasi/cli/terminal-output"
+	terminaloutput "github.com/lxfontes/tiny-component/gen/wasi/cli/terminal-output"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

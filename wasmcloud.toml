@@ -1,0 +1,13 @@
+name = "tiny-component"
+language = "go"
+type = "component"
+version = "0.1.0"
+
+[component]
+build_command = "tinygo build -target=wasip2 --wit-package ./wit --wit-world default -o build/tiny-component.wasm main.go"
+wit_world = "default"
+wasm_target = "wasm32-wasi-preview2"
+destination = "build/tiny_component_s.wasm"
+
+[go]
+disable_go_generate = true

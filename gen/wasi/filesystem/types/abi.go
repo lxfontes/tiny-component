@@ -5,7 +5,7 @@
 package types
 
 import (
-	wallclock "github.com/lxfontes/tinygo/gen/wasi/clocks/wall-clock"
+	wallclock "github.com/lxfontes/tiny-component/gen/wasi/clocks/wall-clock"
 	"github.com/ydnar/wasm-tools-go/cm"
 	"unsafe"
 )

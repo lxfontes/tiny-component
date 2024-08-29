@@ -10,10 +10,10 @@
 package types
 
 import (
-	monotonicclock "github.com/lxfontes/tinygo/gen/wasi/clocks/monotonic-clock"
-	ioerror "github.com/lxfontes/tinygo/gen/wasi/io/error"
-	"github.com/lxfontes/tinygo/gen/wasi/io/poll"
-	"github.com/lxfontes/tinygo/gen/wasi/io/streams"
+	monotonicclock "github.com/lxfontes/tiny-component/gen/wasi/clocks/monotonic-clock"
+	ioerror "github.com/lxfontes/tiny-component/gen/wasi/io/error"
+	"github.com/lxfontes/tiny-component/gen/wasi/io/poll"
+	"github.com/lxfontes/tiny-component/gen/wasi/io/streams"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

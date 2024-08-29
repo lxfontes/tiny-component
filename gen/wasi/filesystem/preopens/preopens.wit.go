@@ -6,7 +6,7 @@
 package preopens
 
 import (
-	"github.com/lxfontes/tinygo/gen/wasi/filesystem/types"
+	"github.com/lxfontes/tiny-component/gen/wasi/filesystem/types"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

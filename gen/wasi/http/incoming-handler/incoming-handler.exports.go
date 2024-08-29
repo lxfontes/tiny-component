@@ -5,7 +5,7 @@
 package incominghandler
 
 import (
-	"github.com/lxfontes/tinygo/gen/wasi/http/types"
+	"github.com/lxfontes/tiny-component/gen/wasi/http/types"
 )
 
 // Exports represents the caller-defined exports from "wasi:http/incoming-handler@0.2.0".

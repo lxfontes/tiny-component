@@ -5,8 +5,8 @@
 package tcp
 
 import (
-	"github.com/lxfontes/tinygo/gen/wasi/io/streams"
-	"github.com/lxfontes/tinygo/gen/wasi/sockets/network"
+	"github.com/lxfontes/tiny-component/gen/wasi/io/streams"
+	"github.com/lxfontes/tiny-component/gen/wasi/sockets/network"
 	"github.com/ydnar/wasm-tools-go/cm"
 	"unsafe"
 )

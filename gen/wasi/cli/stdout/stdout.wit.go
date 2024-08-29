@@ -6,7 +6,7 @@
 package stdout
 
 import (
-	"github.com/lxfontes/tinygo/gen/wasi/io/streams"
+	"github.com/lxfontes/tiny-component/gen/wasi/io/streams"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

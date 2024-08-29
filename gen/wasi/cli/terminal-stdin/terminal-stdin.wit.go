@@ -9,7 +9,7 @@
 package terminalstdin
 
 import (
-	terminalinput "github.com/lxfontes/tinygo/gen/wasi/cli/terminal-input"
+	terminalinput "github.com/lxfontes/tiny-component/gen/wasi/cli/terminal-input"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

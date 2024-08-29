@@ -6,8 +6,8 @@
 package ipnamelookup
 
 import (
-	"github.com/lxfontes/tinygo/gen/wasi/io/poll"
-	"github.com/lxfontes/tinygo/gen/wasi/sockets/network"
+	"github.com/lxfontes/tiny-component/gen/wasi/io/poll"
+	"github.com/lxfontes/tiny-component/gen/wasi/sockets/network"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

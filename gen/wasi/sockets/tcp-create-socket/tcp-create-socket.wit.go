@@ -6,8 +6,8 @@
 package tcpcreatesocket
 
 import (
-	"github.com/lxfontes/tinygo/gen/wasi/sockets/network"
-	"github.com/lxfontes/tinygo/gen/wasi/sockets/tcp"
+	"github.com/lxfontes/tiny-component/gen/wasi/sockets/network"
+	"github.com/lxfontes/tiny-component/gen/wasi/sockets/tcp"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

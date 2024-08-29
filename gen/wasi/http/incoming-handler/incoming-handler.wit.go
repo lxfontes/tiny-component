@@ -9,7 +9,7 @@
 package incominghandler
 
 import (
-	"github.com/lxfontes/tinygo/gen/wasi/http/types"
+	"github.com/lxfontes/tiny-component/gen/wasi/http/types"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

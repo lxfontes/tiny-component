@@ -1,5 +1,5 @@
 package tinygo:test;
 
 world default {
-  include lxfontes:component/imports;
+  include wasmcloud:component/imports;
 }

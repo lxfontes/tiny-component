@@ -17,7 +17,7 @@
 package monotonicclock
 
 import (
-	"github.com/lxfontes/tinygo/gen/wasi/io/poll"
+	"github.com/lxfontes/tiny-component/gen/wasi/io/poll"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

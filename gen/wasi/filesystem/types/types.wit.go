@@ -31,9 +31,9 @@
 package types
 
 import (
-	wallclock "github.com/lxfontes/tinygo/gen/wasi/clocks/wall-clock"
-	ioerror "github.com/lxfontes/tinygo/gen/wasi/io/error"
-	"github.com/lxfontes/tinygo/gen/wasi/io/streams"
+	wallclock "github.com/lxfontes/tiny-component/gen/wasi/clocks/wall-clock"
+	ioerror "github.com/lxfontes/tiny-component/gen/wasi/io/error"
+	"github.com/lxfontes/tiny-component/gen/wasi/io/streams"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 
