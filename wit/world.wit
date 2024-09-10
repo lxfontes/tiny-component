@@ -2,4 +2,5 @@ package tinygo:test;
 
 world default {
   include wasmcloud:component/imports;
+
 }
