@@ -3,8 +3,8 @@
 package ipnamelookup
 
 import (
+	"github.com/bytecodealliance/wasm-tools-go/cm"
 	"github.com/lxfontes/tiny-component/gen/wasi/sockets/network"
-	"github.com/ydnar/wasm-tools-go/cm"
 	"unsafe"
 )
 

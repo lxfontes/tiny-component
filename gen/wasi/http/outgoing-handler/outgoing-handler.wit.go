@@ -7,8 +7,8 @@
 package outgoinghandler
 
 import (
+	"github.com/bytecodealliance/wasm-tools-go/cm"
 	"github.com/lxfontes/tiny-component/gen/wasi/http/types"
-	"github.com/ydnar/wasm-tools-go/cm"
 )
 
 // Handle represents the imported function "handle".

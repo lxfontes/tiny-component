@@ -1,24 +1,19 @@
 package main
 
-//go:generate wit-bindgen-go generate --world default --out gen ./wit
+//go:generate go run github.com/bytecodealliance/wasm-tools-go/cmd/wit-bindgen-go generate --world default --out gen ./wit
 
 import (
-	"fmt"
 	"io"
 	"log/slog"
 	"math/rand/v2"
 	"net/http"
 
-	monotonicclock "github.com/lxfontes/tiny-component/gen/wasi/clocks/monotonic-clock"
-	"github.com/ydnar/wasm-tools-go/cm"
-	"go.wasmcloud.dev/component"
-	"go.wasmcloud.dev/component/lattice"
+	"go.wasmcloud.dev/component/log/wasilog"
 	"go.wasmcloud.dev/component/net/wasihttp"
-	"go.wasmcloud.dev/component/time/wasitime"
 )
 
 var (
-	logger     = component.DefaultLogger
+	logger     = wasilog.DefaultLogger
 	httpClient = wasihttp.DefaultClient
 )
 
@@ -40,12 +35,6 @@ func proxyHandler(w http.ResponseWriter, r *http.Request) {
 	if rng < 50 {
 		outgoingLocation = "west"
 	}
-
-	l.Info("Setting link name", slog.String("location", outgoingLocation))
-	interfaces := []lattice.CallTargetInterface{
-		lattice.NewCallTargetInterface("wasi", "http", "outgoing-handler"),
-	}
-	lattice.SetLinkName(outgoingLocation, cm.ToList(interfaces))
 
 	// WASI Roundtripper
 	l.Info("Creating request")
@@ -73,8 +62,6 @@ func proxyHandler(w http.ResponseWriter, r *http.Request) {
 
 	l.Info("Proxying")
 	w.Header().Set("X-Outgoing-Location", outgoingLocation)
-	w.Header().Set("X-Now", wasitime.Now().String())
-	w.Header().Set("X-Mono", fmt.Sprintf("%d", monotonicclock.Now()))
 	w.WriteHeader(http.StatusOK)
 
 	l.Info("Forwarding response")

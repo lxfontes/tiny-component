@@ -4,9 +4,9 @@
 package udp
 
 import (
+	"github.com/bytecodealliance/wasm-tools-go/cm"
 	"github.com/lxfontes/tiny-component/gen/wasi/io/poll"
 	"github.com/lxfontes/tiny-component/gen/wasi/sockets/network"
-	"github.com/ydnar/wasm-tools-go/cm"
 )
 
 // IncomingDatagram represents the record "wasi:sockets/udp@0.2.0#incoming-datagram".
@@ -18,6 +18,7 @@ import (
 //		remote-address: ip-socket-address,
 //	}
 type IncomingDatagram struct {
+	_ cm.HostLayout
 	// The payload.
 	//
 	// Theoretical max size: ~64 KiB. In practice, typically less than 1500 bytes.
@@ -41,6 +42,7 @@ type IncomingDatagram struct {
 //		remote-address: option<ip-socket-address>,
 //	}
 type OutgoingDatagram struct {
+	_ cm.HostLayout
 	// The payload.
 	Data cm.List[uint8]
 

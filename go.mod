@@ -1,15 +1,21 @@
 module github.com/lxfontes/tiny-component
 
-go 1.22.5
+go 1.23.0
+
+toolchain go1.23.1
 
 require (
-	github.com/ydnar/wasm-tools-go v0.1.5
-	go.wasmcloud.dev/component v0.0.0-20240910182305-2785f866ff0f
+	github.com/bytecodealliance/wasm-tools-go v0.2.1
+	go.wasmcloud.dev/component v0.0.2
 )
 
 require (
-	github.com/samber/lo v1.44.0 // indirect
+	github.com/coreos/go-semver v0.3.1 // indirect
+	github.com/samber/lo v1.47.0 // indirect
 	github.com/samber/slog-common v0.17.1 // indirect
-	golang.org/x/text v0.16.0 // indirect
+	github.com/urfave/cli/v3 v3.0.0-alpha9 // indirect
+	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
+	golang.org/x/mod v0.21.0 // indirect
+	golang.org/x/text v0.18.0 // indirect
 	tinygo.org/x/drivers v0.28.0 // indirect
 )

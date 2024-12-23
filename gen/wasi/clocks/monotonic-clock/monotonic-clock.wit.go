@@ -15,8 +15,8 @@
 package monotonicclock
 
 import (
+	"github.com/bytecodealliance/wasm-tools-go/cm"
 	"github.com/lxfontes/tiny-component/gen/wasi/io/poll"
-	"github.com/ydnar/wasm-tools-go/cm"
 )
 
 // Instant represents the u64 "wasi:clocks/monotonic-clock@0.2.0#instant".
