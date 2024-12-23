@@ -10,7 +10,7 @@
 package terminaloutput
 
 import (
-	"github.com/bytecodealliance/wasm-tools-go/cm"
+	"go.bytecodealliance.org/cm"
 )
 
 // TerminalOutput represents the imported resource "wasi:cli/terminal-output@0.2.0#terminal-output".
@@ -30,7 +30,3 @@ func (self TerminalOutput) ResourceDrop() {
 	wasmimport_TerminalOutputResourceDrop((uint32)(self0))
 	return
 }
-
-//go:wasmimport wasi:cli/terminal-output@0.2.0 [resource-drop]terminal-output
-//go:noescape
-func wasmimport_TerminalOutputResourceDrop(self0 uint32)

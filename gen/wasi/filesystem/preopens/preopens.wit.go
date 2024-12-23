@@ -4,22 +4,21 @@
 package preopens
 
 import (
-	"github.com/bytecodealliance/wasm-tools-go/cm"
 	"github.com/lxfontes/tiny-component/gen/wasi/filesystem/types"
+	"go.bytecodealliance.org/cm"
 )
 
-// GetDirectories represents the imported function "get-directories".
+// Descriptor represents the imported type alias "wasi:filesystem/preopens@0.2.0#descriptor".
 //
-// Return the set of preopened directories, and their path.
+// See [types.Descriptor] for more information.
+type Descriptor = types.Descriptor
+
+// GetDirectories represents the imported function "get-directories".
 //
 //	get-directories: func() -> list<tuple<descriptor, string>>
 //
 //go:nosplit
-func GetDirectories() (result cm.List[cm.Tuple[types.Descriptor, string]]) {
+func GetDirectories() (result cm.List[cm.Tuple[Descriptor, string]]) {
 	wasmimport_GetDirectories(&result)
 	return
 }
-
-//go:wasmimport wasi:filesystem/preopens@0.2.0 get-directories
-//go:noescape
-func wasmimport_GetDirectories(result *cm.List[cm.Tuple[types.Descriptor, string]])

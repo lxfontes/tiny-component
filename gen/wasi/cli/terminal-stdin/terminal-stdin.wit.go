@@ -7,9 +7,14 @@
 package terminalstdin
 
 import (
-	"github.com/bytecodealliance/wasm-tools-go/cm"
 	terminalinput "github.com/lxfontes/tiny-component/gen/wasi/cli/terminal-input"
+	"go.bytecodealliance.org/cm"
 )
+
+// TerminalInput represents the imported type alias "wasi:cli/terminal-stdin@0.2.0#terminal-input".
+//
+// See [terminalinput.TerminalInput] for more information.
+type TerminalInput = terminalinput.TerminalInput
 
 // GetTerminalStdin represents the imported function "get-terminal-stdin".
 //
@@ -19,11 +24,7 @@ import (
 //	get-terminal-stdin: func() -> option<terminal-input>
 //
 //go:nosplit
-func GetTerminalStdin() (result cm.Option[terminalinput.TerminalInput]) {
+func GetTerminalStdin() (result cm.Option[TerminalInput]) {
 	wasmimport_GetTerminalStdin(&result)
 	return
 }
-
-//go:wasmimport wasi:cli/terminal-stdin@0.2.0 get-terminal-stdin
-//go:noescape
-func wasmimport_GetTerminalStdin(result *cm.Option[terminalinput.TerminalInput])

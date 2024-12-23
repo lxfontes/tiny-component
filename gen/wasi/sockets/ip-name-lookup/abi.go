@@ -3,12 +3,12 @@
 package ipnamelookup
 
 import (
-	"github.com/bytecodealliance/wasm-tools-go/cm"
-	"github.com/lxfontes/tiny-component/gen/wasi/sockets/network"
+	"go.bytecodealliance.org/cm"
 	"unsafe"
 )
 
 // OptionIPAddressShape is used for storage in variant or result types.
 type OptionIPAddressShape struct {
-	shape [unsafe.Sizeof(cm.Option[network.IPAddress]{})]byte
+	_     cm.HostLayout
+	shape [unsafe.Sizeof(cm.Option[IPAddress]{})]byte
 }

@@ -10,7 +10,7 @@
 package terminalinput
 
 import (
-	"github.com/bytecodealliance/wasm-tools-go/cm"
+	"go.bytecodealliance.org/cm"
 )
 
 // TerminalInput represents the imported resource "wasi:cli/terminal-input@0.2.0#terminal-input".
@@ -30,7 +30,3 @@ func (self TerminalInput) ResourceDrop() {
 	wasmimport_TerminalInputResourceDrop((uint32)(self0))
 	return
 }
-
-//go:wasmimport wasi:cli/terminal-input@0.2.0 [resource-drop]terminal-input
-//go:noescape
-func wasmimport_TerminalInputResourceDrop(self0 uint32)

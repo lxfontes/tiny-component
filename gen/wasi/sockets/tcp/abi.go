@@ -3,24 +3,26 @@
 package tcp
 
 import (
-	"github.com/bytecodealliance/wasm-tools-go/cm"
-	"github.com/lxfontes/tiny-component/gen/wasi/io/streams"
 	"github.com/lxfontes/tiny-component/gen/wasi/sockets/network"
+	"go.bytecodealliance.org/cm"
 	"unsafe"
 )
 
 // TupleTCPSocketInputStreamOutputStreamShape is used for storage in variant or result types.
 type TupleTCPSocketInputStreamOutputStreamShape struct {
-	shape [unsafe.Sizeof(cm.Tuple3[TCPSocket, streams.InputStream, streams.OutputStream]{})]byte
+	_     cm.HostLayout
+	shape [unsafe.Sizeof(cm.Tuple3[TCPSocket, InputStream, OutputStream]{})]byte
 }
 
 // TupleInputStreamOutputStreamShape is used for storage in variant or result types.
 type TupleInputStreamOutputStreamShape struct {
-	shape [unsafe.Sizeof(cm.Tuple[streams.InputStream, streams.OutputStream]{})]byte
+	_     cm.HostLayout
+	shape [unsafe.Sizeof(cm.Tuple[InputStream, OutputStream]{})]byte
 }
 
 // IPSocketAddressShape is used for storage in variant or result types.
 type IPSocketAddressShape struct {
+	_     cm.HostLayout
 	shape [unsafe.Sizeof(network.IPSocketAddress{})]byte
 }
 
